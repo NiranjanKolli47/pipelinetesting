@@ -1,1 +1,0 @@
-rasdial BSNL username password 
