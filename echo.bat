@@ -18,6 +18,6 @@ if exist G:\evt_api_event_pkg.sql (echo "File exists" ) else (echo "File does no
 
 SET a = Hello 
 SET b = World 
-SET d = 50 
+SET /A d = 50 
 SET c=%a% and %b% %d%
 echo %c%
