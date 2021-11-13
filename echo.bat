@@ -12,3 +12,4 @@ echo "This is your first instance of pulling code from Git through Jenkins"
 Rem Displays the contents of the PATH variable 
 echo %PATH%
 
+Copy H:\Downloads back up on 18-06-21 G:\
