@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	stages {
-		stage('Git- Checkout') {
+		stage('Git-Checkout') {
 			steps {
 					echo "Checking out for Git Repo" ;
 					git branch: 'origin', url: 'https://github.com/NiranjanKolli47/pipelinetesting.git'
@@ -11,18 +11,11 @@ pipeline {
 		stage ('Build') {
 			steps {
 					echo "Building the checked out project" ;
-					bat 'test1.bat'
-				}
-			}
-			
-		stage ('Unit-Test') {
-			steps {
-					echo "Running the JUnit Tests" ;
-					bat 'Unit.bat'
+					bat 'echo.bat'
 				}
 			}
 		}
-		Post {
+		post {
 			always {
 				echo "This is will always run"
 				}
@@ -41,4 +34,3 @@ pipeline {
 				}
 			}
 		}
-				
