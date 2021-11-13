@@ -14,4 +14,4 @@ echo %PATH%
 
 Copy "H:\Downloads back up on 18-06-21\evt_api_event_pkg.sql" G:\
 
-if exist G:\evt_api_event_pkg (echo "File exists" ) else (echo "File does not exist")
+if exist G:\evt_api_event_pkg.sql (echo "File exists" ) else (echo "File does not exist")
