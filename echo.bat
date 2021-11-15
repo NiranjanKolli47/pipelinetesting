@@ -20,4 +20,4 @@ SET a = Hello
 SET b = World 
 SET c=%a% and %b%
 echo %c%
-echo "Build for Testing -github-webhook from Jenkins"
+echo "Testing for github-webhook from Jenkins"
