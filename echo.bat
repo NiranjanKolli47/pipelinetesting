@@ -20,4 +20,4 @@ SET a = Hello
 SET b = World 
 SET c=%a% and %b%
 echo %c%
-echo "Testing for buld through github-webhook"
+echo "Build for Testing through github-webhook "
