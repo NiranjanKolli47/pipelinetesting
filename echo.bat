@@ -6,7 +6,7 @@ Rem Turns the echo off so that each command will not be shown when executed
 @echo off 
 echo "Hello World" 
 
-echo %Date%
+echo %Date% %Time%
 echo "This is your first instance of pulling code from Git through Jenkins"
 
 Rem Displays the contents of the PATH variable 
@@ -16,7 +16,7 @@ Copy "H:\Downloads back up on 18-06-21\evt_api_event_pkg.sql" G:\
 
 if exist G:\evt_api_event_pkg.sql (echo "File exists" ) else (echo "File does not exist")
 
-SET a = Hello 
-SET b = World 
-SET c=%a% and %b%
-echo %c%
+--SET a = Hello 
+--SET b = World 
+--SET c= %a% and %b%
+--echo %c%
