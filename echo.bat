@@ -16,7 +16,15 @@ Copy "H:\Downloads back up on 18-06-21\evt_api_event_pkg.sql" G:\
 
 if exist G:\evt_api_event_pkg.sql (echo "File exists" ) else (echo "File does not exist")
 
+<<<<<<< HEAD
 --SET a = Hello 
 --SET b = World 
 --SET c= %a% and %b%
 --echo %c%
+=======
+SET a = Hello 
+SET b = World 
+SET c= "%a%" and "%b%"
+echo %c%
+echo "Testing for github-webhook from Jenkins"
+>>>>>>> 6239eb3db164930a23b37730a0d5fb5d4fa2f590
