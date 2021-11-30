@@ -4,7 +4,7 @@ pipeline {
 		stage('Git-Checkout') {
 			steps {
 					echo "Checking out for Git Repo" ;
-					git branch: 'origin', url: 'https://github.com/NiranjanKolli47/pipelinetesting.git'
+			git		git branch: 'origin', url: 'https://github.com/NiranjanKolli47/pipelinetesting.git'
 			}
 		}
 		
@@ -15,8 +15,13 @@ pipeline {
 				}
 			}
 		
+		stage ('Email') {
+			steps {
+					emailext(to: 'niranjankumar.kolli@gmail.com', replyTo: 'niranjankumarkolli@outlook.com', Subject: "Email Report from Jenkins",
+					body: readFile("F:\DevOps\pipelinetesting\pipelinetesting\homepage.html"), mimetype: 'text/html');
+				}
+			}
 		
-		}
 		post {
 			always {
 				echo "This is will always run"
@@ -36,3 +41,4 @@ pipeline {
 				}
 			}
 		}
+	}
