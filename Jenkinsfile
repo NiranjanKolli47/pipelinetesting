@@ -21,6 +21,7 @@ pipeline {
 					body: readFile("F:\DevOps\pipelinetesting\pipelinetesting\homepage.html"), mimetype: 'text/html');
 				}
 			}
+		
 		post {
 			always {
 				echo "This is will always run"
@@ -40,3 +41,4 @@ pipeline {
 				}
 			}
 		}
+	}
