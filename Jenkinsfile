@@ -18,7 +18,7 @@ pipeline {
 		stage ('Email') {
 			steps {
 					emailext(to: 'niranjankumar.kolli@gmail.com', replyTo: 'niranjankumarkolli@outlook.com', Subject: "Email Report from Jenkins",
-					body: readFile("F:\DevOps\pipelinetesting\pipelinetesting\homepage.html"), mimeType: 'text/html');
+					body: readFile("F:/DevOps/pipelinetesting/pipelinetesting/homepage.html"), mimeType: 'text/html');
 				}
 			}
 		
